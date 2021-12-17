@@ -8,21 +8,23 @@
   > There are many programming languages using for the framework.  
 
 ## What does ***.NET*** include?    
-  > two items : ***CLR*** and ***class library***.
+  > Two items : ***CLR*** and ***class library***.
 
 ## What is ***CLR***?
  > Commom Language Runtime.      
- > It is a application used for translating the IL_code(the intermideate code of C#) to naive machine code. 
+ > It is a application used for translating the IL_code(the intermideate code of C#) to naive machine code.  
+ > This process is called JIT(Just In Time) comliation.  
   >> This IL-code(Intermideate Language) makes C# fit to any machine.    
  
- ## What is the organization of a .NET application?
-  > ***class***(a container of some data and it can be also called ***attributes*** and ***functions*** or ***methods***).  
-  > several same type classes -> ***namespace***(like data namespace, graphic namespace).  
-  > related namespaces -> ***assembly***(EXE:excutable or DLL: dynamically linked library).  
-  > one or more assemblies -> ***application***     
-  > 
-  > ***class*** is a container wih somne data and it can be also called ***attributes*** and ***functions*** or ***methods***.     
-  > 
+## What is the organization of a .NET application?
+ > ***Class***(A container of some ***data***(***attributes***) and ***functions***(***methods***)).  
+ > Related classes -> ***Namespace***(like data namespace, graphic namespace).  
+ > Related namespaces -> ***Assembly***(Which is a file as EXE:excutable or DLL: dynamically linked library -> reused in other programs).  
+ > One or more assemblies -> ***Application***     
+ > 
+ > ***Class*** is a container wih somne data and it can be also called ***attributes*** and ***functions*** or ***methods***.        
+
+
 
 
 
