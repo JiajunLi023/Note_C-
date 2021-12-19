@@ -1,0 +1,58 @@
+# How many kinds of Type Conversion?
+> 1. Implicity Conversion  
+> 2. Explicity Conversion  
+> 3. Non-compatible Types Conversion  
+
+# What is implicity conversion?
+>When there is no possibility of data loss, we use implicity conversion. (convert from small to big)  
+```
+byte b = 1;
+int i = b;
+float f = i;
+```
+>In the second line convert b from byte to int and in the third line convert i from int to float **BUT** the types of b and f don't change.
+ 
+# What is explicity convbersionm?
+>When there is possibility of data loss, we use explicity conversion. (convert from big to small)
+```
+int b = 1;
+byte i = (byte)b;
+```
+>In the second line convert b from int to byte **BUT** the type of b doesn't change.  
+```
+float f= 1.3f;
+int i= int(f);
+```
+>In the second line convert f from float to int **BUT** the tpye of f doesn't change.   
+
+# What is non-compatible types conversion?
+>The tpye of integral and the type of charactor is non-compatible.
+>We use `int.Parse` or **Convert** function like:
+```
+Convert.ToByte()  /*to byte
+Convert.ToInt16() /*to short
+Convert.ToInt32() /*to int
+Convert.ToInt64() /*to long
+```
+For example:
+```
+string s = "1";
+int i = Convert.ToInt32(s);
+int j = int.Parse(s)
+```
+>Convert s from string to int just in that line **BUT** the origibal tpye of s doesn't change.
+
+# How about overflow?
+>When there is an overflow, there will be a exception happenning and we can use **try** and **catch** to handle the exception.
+```
+try
+(
+  string str = "1234";
+  byte a = Convert.ToByte(str);
+  Console.Writeline(a);
+)
+catch(Exception)
+{
+  Console.Writeline("It can not be converted to a byte type.")
+}
+```
