@@ -1,0 +1,24 @@
+# How many kinds of operators?
+>1. Arithmatic operators: **+add&nbsp; -sub&nbsp; \*mul&nbsp; /div&nbsp; %reminder&nbsp; ++incrementa=a+1&nbsp; --decrementa=a-1**    
+>2. Comparison operators: **==equal&nbsp; !=not equal&nbsp; \<less than&nbsp; >more than&nbsp; <=less or equal&nbsp; >=more or equal**  
+>**a += 3** means **a = a + 3** 
+>3. Assignment operators: **=&nbsp; +=&nbsp; -=&nbsp; \*=&nbsp; /=&nbsp;**  
+>4. Logical operators: **&&and&nbsp; ||or&nbsp; !not**  
+>5. Bitwise operator:**&and&nbsp; |or**
+
+# Two tpye of increment and derement?
+>1.Postfix  
+```
+int a= 1;
+int b = a++;
+```
+>Result: a = 2, b = 1  
+>2.Prefix  
+```
+int a = 1;
+int b = ++1;
+```
+>Result: a = 2. b = 2.  
+
+# What the difference of Logical and Bitwise?
+> Logical operators is used for condition judgment and bitwise operator is use for arithmatic calculation  
