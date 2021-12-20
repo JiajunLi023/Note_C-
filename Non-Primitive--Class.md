@@ -1,0 +1,46 @@
+# What is class?
+>***Class*** conbine relative data(fields) and functions(methods) together  
+>We can create objects to use the class but we need to allocate storage for them.  
+
+# How to declare a class(including its fields and functions)?
+>For class: ***Modifier class Identifier***
+```
+public class Person
+```
+>For fields and functions: ***Modifier Keywords Identifier***
+```
+public string FirstName;  //Declaring Data
+public int Age;    //Declaring Data
+public void Instruction(string[] args)         //Declaring Function
+```
+tips: `public` is used to make he class accessible. 
+
+# How to use the class or the functions in the class?
+> Use the Name of class to create new object  
+> Use `new.Name` to allocate storage  
+> Use **NewNameOfObject.DataName** and **NewNameOfObject.FunctionName** to declare the new data and use the function.
+```
+Person John = new.Person();  //assume the name of the class is Person and new. is used to allocate storage.
+John.FirstName = "John";  //declare the data of object John
+John.Age = 23;              
+Jhon.Instruction();       //use the function of Person.Instruction
+```
+
+# What is static(one of the modifier)?
+>With static modifier, we can accesss a member without create a object
+```
+namespace Classes.Math
+{
+    public static class Calculator
+    {
+        public static int Add(int a, int b)
+        {
+            return a + b;   
+        }
+    }
+}
+```
+>We can directly use the Add function in the Calculator class
+```
+int result = Calculator.Add(2,3);
+```
